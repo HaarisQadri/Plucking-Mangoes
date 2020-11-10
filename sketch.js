@@ -91,7 +91,7 @@ function draw()
 }
 function mouseDragged()
 {
-	Matter.Body.setPosition(stoneObj.body, {x:mouseX, y:mouseY}) 
+	Matter.Body.setPosition(stoneObject.body, {x:mouseX, y:mouseY}) 
 }
 
 function mouseReleased()
@@ -102,8 +102,8 @@ function mouseReleased()
 
 function keyPressed() {
 	if (keyCode === 32) {
-    Matter.Body.setPosition(stoneObj.body, {x:235, y:420}) 
-	  launcherObject.attach(stoneObj.body);
+    Matter.Body.setPosition(stoneObject.body, {x:235, y:420}) 
+	  launcherObject.attach(stoneObject.body);
 	}
   }
 
